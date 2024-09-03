@@ -3,6 +3,8 @@ import "./App.css";
 import Box from "./Box";
 import Header from "./header";
 import Post from "./Post";
+import { useState } from "react";
+import { State } from "./State";
 
 function App() {
   const Posts = [
@@ -21,17 +23,25 @@ function App() {
   const PostList = Posts.map((post) => {
     return <Post key={post.id} title={post.title} pragraph={post.pragraph} />;
   });
+
+  const [num, setNum] = useState(0);
+
+  function changeNum() {
+    setNum(num + 1);
+  }
+
   return (
     <div>
       <Header />
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div style={{ display: "flex", width: "80%" }}>
-          <div class="row">
+          <div className="row">
             <div style={{ width: "50%" }}>{PostList}</div>
             <Box />
           </div>
         </div>
       </div>
+      {State(num, changeNum)}
     </div>
   );
 }
