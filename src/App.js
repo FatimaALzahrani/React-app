@@ -5,6 +5,7 @@ import Header from "./header";
 import Post from "./Post";
 import { useState } from "react";
 import { State } from "./State";
+import InputState from "./InputState";
 
 function App() {
   const Posts = [
@@ -42,6 +43,7 @@ function App() {
         </div>
       </div>
       {State(num, changeNum)}
+      <InputState />
     </div>
   );
 }
