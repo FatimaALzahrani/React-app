@@ -12,10 +12,15 @@ function App() {
         <div style={{ display: "flex", width: "80%" }}>
           <div class="row">
             <div style={{ width: "50%" }}>
-              <Post />
-              <Post />
-              <Post />
-              <Post />
+              <Post
+                title="فاطمة الزهراني"
+                pragraph="خريجة علوم حاسبات من جامعة الباحة"
+              />
+              <Post title="React.js" pragraph="Great FrameWork" />
+              <Post
+                title="الباحة"
+                pragraph="افضل منطفة في العالم للسياحة والعيش فجوها جميل وهادية"
+              />
             </div>
             <Box />
           </div>

@@ -9,6 +9,11 @@ var button = {
   textAlgin: "center",
 };
 
-export default function Button() {
-  return <button style={button}>Tag Button</button>;
+export default function Button({ text, children }) {
+  return (
+    <button style={button}>
+      {text}
+      {children}
+    </button>
+  );
 }

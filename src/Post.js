@@ -6,12 +6,12 @@ var post = {
   textAlign: "center",
 };
 
-export default function Post() {
+export default function Post({ title, pragraph }) {
   return (
     <div style={post}>
-      <h2>title</h2>
+      <h2>{title}</h2>
       <hr />
-      <p>bla bla bla</p>
+      <p>{pragraph}</p>
     </div>
   );
 }
