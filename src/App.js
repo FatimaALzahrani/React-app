@@ -8,6 +8,7 @@ import { State } from "./State";
 import InputState from "./InputState";
 import Form from "./Form";
 import Scoreboard from "./Score";
+import ArrayState from "./ArrayState";
 
 function App() {
   const Posts = [
@@ -48,6 +49,7 @@ function App() {
       <InputState />
       <Form />
       <Scoreboard />
+      <ArrayState />
     </div>
   );
 }
