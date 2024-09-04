@@ -10,6 +10,7 @@ import Form from "./Form";
 import Scoreboard from "./Score";
 import ArrayState from "./ArrayState";
 import ShoppingCart from "./ShopingCart";
+import RequestTracker from "./RequestTraker";
 
 function App() {
   const Posts = [
@@ -52,6 +53,7 @@ function App() {
       <Scoreboard />
       <ArrayState />
       <ShoppingCart />
+      <RequestTracker />
     </div>
   );
 }
