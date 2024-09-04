@@ -9,6 +9,7 @@ import InputState from "./InputState";
 import Form from "./Form";
 import Scoreboard from "./Score";
 import ArrayState from "./ArrayState";
+import ShoppingCart from "./ShopingCart";
 
 function App() {
   const Posts = [
@@ -50,6 +51,7 @@ function App() {
       <Form />
       <Scoreboard />
       <ArrayState />
+      <ShoppingCart />
     </div>
   );
 }
