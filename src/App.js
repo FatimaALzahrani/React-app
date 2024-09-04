@@ -7,6 +7,7 @@ import { useState } from "react";
 import { State } from "./State";
 import InputState from "./InputState";
 import Form from "./Form";
+import Scoreboard from "./Score";
 
 function App() {
   const Posts = [
@@ -46,6 +47,7 @@ function App() {
       {State(num, changeNum)}
       <InputState />
       <Form />
+      <Scoreboard />
     </div>
   );
 }
